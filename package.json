@@ -1,6 +1,6 @@
 {
   "name": "zpr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "zpr (pronounced zeper or /ˈziːpər/) is a Node module that provides a simple programmatic way to construct zsh prompts.",
   "main": "dist/main.js",
   "scripts": {
@@ -12,7 +12,11 @@
     "prepublish": "npm run build",
     "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'test/*.ts'"
   },
-  "keywords": [],
+  "keywords": [
+    "zsh",
+    "prompt",
+    "zpr"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {

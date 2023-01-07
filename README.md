@@ -11,7 +11,7 @@ npm i zpr
 ## Usage
 
 ```js
-const Prompt = require('zpr');
+import Prompt from 'zpr';
 
 const prompt = new Prompt()
   .colorOpen('red')

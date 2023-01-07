@@ -26,10 +26,26 @@ console.log(prompt.toString());
 
 ## FAQ
 
-### CLI Support?
+### How can I use this?
 
-No, there is no CLI support (yet). If you want to use zpr in your shell, you'll have to write a wrapper script. However, I do plan on adding a CLI in the future.
+To set a prompt on the left side of your terminal, add the following to your `~/.zshrc`:
+
+```bash
+PROMPT="$(node /path/to/your/script.js)"
+```
+
+To set a prompt on the right side of your terminal, add the following to your `~/.zshrc`:
+
+```bash
+RPROMPT="$(node /path/to/your/script.js)"
+```
+
+If you use substitutions in your prompt, you'll need to use single quotes instead of double quotes.
 
 ### Why?
 
 To allow the easy creation of zsh prompts from within Node, instead of having to mess around with pesky shell scripts and percent signs.
+
+### CLI Support?
+
+No, there is no CLI support (yet). If you want to use zpr in your shell, you'll have to write a wrapper script. However, I do plan on adding a CLI in the future.

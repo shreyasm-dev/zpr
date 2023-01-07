@@ -1,6 +1,6 @@
 {
   "name": "zpr",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "zpr (pronounced zeper or /ˈziːpər/) is a Node module that provides a simple programmatic way to construct zsh prompts.",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -18,7 +18,7 @@
     "prompt",
     "zpr"
   ],
-  "author": "",
+  "author": "shreyasm-dev",
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.3.4",

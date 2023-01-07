@@ -24,6 +24,11 @@ const prompt = new Prompt()
 console.log(prompt.toString());
 ```
 
+## Plug-n-Play Prompts
+
+- [transpicuous](https://www.npmjs.com/package/transpicuous)
+- Made one? Open a PR and let me know!
+
 ## FAQ
 
 ### How can I use this?

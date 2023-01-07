@@ -21,7 +21,7 @@ const prompt = new Prompt()
   .colorClose()
   .text(' $ ');
 
-console.log(prompt.export());
+console.log(prompt.toString());
 ```
 
 ## FAQ

@@ -160,6 +160,18 @@ export default class {
   }
 
   /**
+   * Add a substitution to the prompt (syntactic sugar for adding ${text})
+   * 
+   * @param substitution The substitution to add
+   * @remarks Requires prompt_subst to be enabled (`setopt prompt_subst`)
+   * @returns this
+   */
+  substitution(substitution: string) {
+    this.elements.push(new PromptText(`${substitution}`));
+    return this;
+  }
+
+  /**
    * Any text after this element will be colored
    * 
    * @returns this
@@ -207,16 +219,5 @@ export default class {
         }
       })
       .join('');
-  }
-
-  /**
-   * Export the prompt as a string that can be used in a shell script
-   * 
-   * @param variable The name of the variable to export
-   * @remarks The default variable is `PROMPT`
-   * @returns The prompt as a string
-   */
-  export(variable = 'PROMPT') {
-    return `${variable}="${this.toString()}"`;
   }
 }

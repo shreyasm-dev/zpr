@@ -25,10 +25,10 @@ describe('Prompt', () => {
     'time24Seconds',
     'dd',
     'mmddyy',
+    'substitution',
     'colorOpen',
     'colorClose',
     'toString',
-    'export',
   ].forEach((method) => {
     it(`should have a ${method} method`, () => {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -53,15 +53,5 @@ describe('Prompt', () => {
 
   it('should use toString correctly', () => {
     expect(prompt.toString()).to.equal('%F{red}[%n@%m] %f%F{green}%~%f%F{blue} $ %f');
-  });
-
-  describe('export', () => {
-    it('should use export correctly', () => {
-      expect(prompt.export()).to.equal('PROMPT="%F{red}[%n@%m] %f%F{green}%~%f%F{blue} $ %f"');
-    });
-
-    it('should use export correctly with a custom variable', () => {
-      expect(prompt.export('TEST')).to.equal('TEST="%F{red}[%n@%m] %f%F{green}%~%f%F{blue} $ %f"');
-    });
   });
 });

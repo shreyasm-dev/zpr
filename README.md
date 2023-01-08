@@ -36,13 +36,13 @@ console.log(`PROMPT="prompt.toString()"`);
 To set a prompt on the left side of your terminal, add the following to your `~/.zshrc`:
 
 ```bash
-PROMPT="$(node /path/to/your/script.js)"
+eval $(node /path/to/your/script.js)
 ```
 
 To set a prompt on the right side of your terminal, add the following to your `~/.zshrc`:
 
 ```bash
-RPROMPT="$(node /path/to/your/script.js)"
+eval $(node /path/to/your/script.js)
 ```
 
 If you use substitutions in your prompt, you'll need to use single quotes instead of double quotes.

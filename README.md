@@ -21,7 +21,7 @@ const prompt = new Prompt()
   .colorClose()
   .text(' $ ');
 
-console.log(`PROMPT="prompt.toString()"`);
+console.log(`PROMPT="${prompt.toString()}"`);
 ```
 
 ## Plug-n-Play Prompts
